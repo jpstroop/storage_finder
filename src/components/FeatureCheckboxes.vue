@@ -21,6 +21,8 @@
     },
     methods: {
       manageFeature(id) {
+        // Just rely on button toggling to add and remove. The Array starts out
+        // empty, so the first click will add, second will remove, etc...
         store.hasFeature(id) ? store.removeFeature(id) : store.addFeature(id);
         console.log(store.state.requiredFeatures)
       }
