@@ -1,19 +1,30 @@
 <template>
   <ul class="featureList">
     <li v-for="feature in features" :key="feature.id">
-      <input class="form-check-input" type="checkbox" value="" :id="feature.id + 'Check'">
+      <input class="form-check-input"
+        type="checkbox"
+        :id="feature.id + 'Check'"
+        v-on:change="manageFeature(feature.id)"
+      >
       <label class="form-check-label" :for="feature.id + 'Check'">{{ feature.description }}</label>
     </li>
   </ul>
 </template>
 
 <script>
+  import { store } from "../store.js";
+
   export default {
     name: 'feature-checkboxes',
     props: {
       features: Array
     },
-    methods: {}
+    methods: {
+      manageFeature(id) {
+        store.hasFeature(id) ? store.removeFeature(id) : store.addFeature(id);
+        console.log(store.state.requiredFeatures)
+      }
+    }
   }
 </script>
 
