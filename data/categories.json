@@ -1,7 +1,8 @@
 [{
   "id": "classification",
   "description": "What is the classification of your data?",
-  "long-description":"<html>"
+  "long-description":"<p>I'm Dr. James McCrimmon from the township of Balamory. I'm the Doctor, I can save the world with a kettle and some string! And look! I'm wearing a vegetable! Yeah? Well I'm the Lord of Time.</p>
+  <p>Don't be sad Grace. <a href=\"http://doctoripsum.com/\">You'll do great things.</a> Jamie, remind me to give you a lesson in tying knots, sometime.</p>"
 }, {
   "id": "backup",
   "description": "Do you need backups, snapshots or replication of your data?",

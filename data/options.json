@@ -1,8 +1,64 @@
 [{
-  "id": 1,
-  "label": "Storage Option A",
-  "description": "",
+  "id": "google-drive",
+  "label": "Google Drive",
+  "description": "Exotic alien swords are easy to come by, Aces are rare.",
+  "url": "https://princeton.service-now.com/snap?id=kb_article&sys_id=126cf52fdbce43407d817d598c961977",
   "features": [
-
+    "public-ok",
+    "access-anywhere",
+    "access-mobile",
+    "small-scale"
+  ]
+}, {
+  "id": "ms-onedrive",
+  "label": "Microsoft OneDrive",
+  "description": "It's a fez. I wear a fez now. Fezzes are cool.",
+  "url": "https://princeton.service-now.com/snap?sys_id=KB0010779&id=kb_article",
+  "features": [
+    "public-ok",
+    "access-anywhere",
+    "access-mobile",
+    "small-scale"
+  ]
+}, {
+  "id": "dropbox",
+  "label": "Dropbox",
+  "description": "Father Christmas. Santa Claus. Or, as I’ve always known him, Jeff.",
+  "url": "https://princeton.service-now.com/snap?id=kb_article&sys_id=9dc11966dbcd5700b43dec51ca961956",
+  "features": [
+    "public-ok",
+    "access-anywhere",
+    "access-mobile",
+    "small-scale"
+  ]
+}, {
+  "id": "central-file-server",
+  "label": "Central File Server",
+  "description": "I once spent a hell of a long time trying to get a gobby Australian to Heathrow airport.",
+  "url": "https://princeton.service-now.com/snap/?id=kb_article&sys_id=e22a27064f9ca20018ddd48e5210c772",
+  "features": [
+    "sensitive",
+    "small-scale"
+  ]
+}, {
+  "id": "onbase",
+  "label": "OnBase",
+  "description": "Shut up! Just shut up, shut up, shut up, shuttity up up up!",
+  "url": "",
+  "features": [
+    "confidential",
+    "small-scale"
+  ]
+}, {
+  "id": "dataspace",
+  "label": "DataSpace",
+  "description": "I just have one question… do you know how to fly this thing?",
+  "url": "https://dataspace.princeton.edu/jspui/about",
+  "features": [
+    "public-ok",
+    "sensitive",
+    "access-anywhere",
+    "access-mobile",
+    "small-scale"
   ]
 }]
