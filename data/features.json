@@ -1,0 +1,57 @@
+[{
+  "id": "public",
+  "category": "classification",
+  "description": "Public"
+}, {
+  "id": "sensitive",
+  "category": "classification",
+  "description": "Sensitive / Moderate Risk"
+}, {
+  "id": "confidential",
+  "category": "classification",
+  "description": "Confidential or Restricted / High Risk"
+}, {
+  "id": "hippa",
+  "category": "classification",
+  "description": "HIPAA-Regulated"
+}, {
+  "id": "durable",
+  "category": "backup",
+  "description": "I need one or more backup/snapshot copies of the data, and need to be able to restore data from previous points in time (high durability)."
+}, {
+  "id": "available",
+  "category": "backup",
+  "description": "I need to have replicate copies of the data to minimize downtime (high availability)."
+}, {
+  "id": "small",
+  "category": "scale",
+  "description": "Unlikely to exceed 1TB in 2 years"
+}, {
+  "id": "large",
+  "category": "scale",
+  "description": "Greater than 1TB or likely to exceed in 2 years"
+}, {
+  "id": "many-files",
+  "category": "performance",
+  "description": "I am likely to have more than 1,000 files in a single directory within two years."
+}, {
+  "id": "many-transactions",
+  "category": "performance",
+  "description": "My data interactions demand high transaction or transfer rates."
+}, {
+  "id": "access-anywhere",
+  "category": "access",
+  "description": "I need easy access to this data from anywhere, even when I don't have my own computer or mobile device with me."
+}, {
+  "id": "access-mobile",
+  "category": "access",
+  "description": "I frequently need access from a mobile device such as a phone or tablet."
+}, {
+  "id": "princeton-only",
+  "category": "sharing",
+  "description": "Only those with a Princeton NetID or guest ID"
+}, {
+  "id": "world",
+  "category": "sharing",
+  "description": "Users in and out of the Princeton community"
+}]
