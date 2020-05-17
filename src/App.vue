@@ -1,14 +1,14 @@
 <template>
   <div id="app" class="small-container">
-    <h1>Storage Options</h1>
-    <option-selector :categories="categories" :features="features" />
-    <options />
+    <h1>Storage Finder</h1>
+    <feature-categories :categories="categories" :features="features" />
+    <option-list />
   </div>
 </template>
 
 <script>
-import OptionSelector from '@/components/OptionSelector.vue'
-import Options from '@/components/Options.vue'
+import FeatureCategories from '@/components/FeatureCategories.vue'
+import OptionList from '@/components/OptionList.vue'
 import categories from '@/../data/categories.json'
 import features from '@/../data/features.json'
 import options from '@/../data/options.json'
@@ -16,8 +16,8 @@ import options from '@/../data/options.json'
 export default {
   name: 'app',
   components: {
-    OptionSelector,
-    Options
+    FeatureCategories,
+    OptionList
   },
   data() {
     return {

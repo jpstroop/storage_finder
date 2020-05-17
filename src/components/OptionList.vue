@@ -1,5 +1,5 @@
 <template>
-  <div id="options" class="col-sm-8">
+  <div id="option-list" class="col-sm-8">
     <ul>
 
     </ul>
@@ -8,7 +8,7 @@
 
 <script>
   export default {
-    name: 'options',
+    name: 'option-list',
     props: {
       options: Array
     },

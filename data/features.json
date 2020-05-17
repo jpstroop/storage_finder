@@ -15,19 +15,19 @@
   "category": "classification",
   "description": "HIPAA-Regulated"
 }, {
-  "id": "durable",
+  "id": "versioned",
   "category": "backup",
-  "description": "I need one or more backup/snapshot copies of the data, and need to be able to restore data from previous points in time (high durability)."
+  "description": "I need one or more backup/snapshot copies of the data, and need to be able to restore data from previous points in time."
 }, {
   "id": "available",
   "category": "backup",
   "description": "I need to have replicate copies of the data to minimize downtime (high availability)."
 }, {
-  "id": "small",
+  "id": "small-scale",
   "category": "scale",
   "description": "Unlikely to exceed 1TB in 2 years"
 }, {
-  "id": "large",
+  "id": "large-scale",
   "category": "scale",
   "description": "Greater than 1TB or likely to exceed in 2 years"
 }, {
