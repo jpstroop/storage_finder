@@ -1,18 +1,31 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="small-container">
+    <h1>Storage Options</h1>
+    <option-selector :categories="categories" :features="features" />
+    <options />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import OptionSelector from '@/components/OptionSelector.vue'
+import Options from '@/components/Options.vue'
+import categories from '@/../data/categories.json'
+import features from '@/../data/features.json'
+import options from '@/../data/options.json'
 
 export default {
-  name: 'App',
+  name: 'app',
   components: {
-    HelloWorld
-  }
+    OptionSelector,
+    Options
+  },
+  data() {
+    return {
+      categories: categories,
+      features: features,
+      options: options
+    }
+  },
 }
 </script>
 
@@ -23,6 +36,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 10px;
 }
 </style>

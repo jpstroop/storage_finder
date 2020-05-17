@@ -1,0 +1,25 @@
+[{
+  "id": "classification",
+  "description": "What is the classification of your data?",
+  "long-description":"<html>"
+}, {
+  "id": "backup",
+  "description": "Do you need backups, snapshots or replication of your data?",
+  "long-description":"<html>"
+}, {
+  "id": "scale",
+  "description": "How much data do you have and how fast will it grow?",
+  "long-description":"<html>"
+}, {
+  "id": "performance",
+  "description": "Do you have special performance needs?",
+  "long-description":"<html>"
+}, {
+  "id": "access",
+  "description": "How are you expecting to access the data?",
+  "long-description":"<html>"
+}, {
+  "id": "sharing",
+  "description": "With whom do you need to share your data regularly?",
+  "long-description":"<html>"
+}]
