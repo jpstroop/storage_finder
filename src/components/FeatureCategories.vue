@@ -53,6 +53,12 @@
 </style>
 
 <style scoped>
+
+#feature-categories {
+  padding-right: 0;
+  margin-right: 0;
+}
+
 .list-group-item {
   text-align: left;
 }
@@ -81,6 +87,10 @@
 
 .not-collapsed.when-closed {
   display: none;
+}
+
+.list-group-item {
+  margin: auto 1rem;
 }
 
 </style>
