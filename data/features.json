@@ -1,7 +1,7 @@
 [{
-  "id": "public-ok",
+  "id": "public",
   "category": "classification",
-  "description": "Public"
+  "description": "Data may be public"
 }, {
   "id": "sensitive",
   "category": "classification",
