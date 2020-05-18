@@ -1,8 +1,12 @@
 <template>
-  <div id="app" class="small-container">
+  <div id="app">
     <h1>Storage Finder</h1>
-    <feature-categories :categories="categories" :features="features" />
-    <option-list />
+    <div class="small-container">
+      <div class="row">
+        <feature-categories :categories="categories" :features="features" />
+        <option-list :options="options" />
+      </div>
+    </div>
   </div>
 </template>
 
