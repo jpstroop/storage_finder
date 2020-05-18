@@ -4,7 +4,7 @@
   "description": "Exotic alien swords are easy to come by, Aces are rare.",
   "url": "https://princeton.service-now.com/snap?id=kb_article&sys_id=126cf52fdbce43407d817d598c961977",
   "features": [
-    "public-ok",
+    "public",
     "access-anywhere",
     "access-mobile",
     "small-scale"
@@ -15,7 +15,7 @@
   "description": "It's a fez. I wear a fez now. Fezzes are cool.",
   "url": "https://princeton.service-now.com/snap?sys_id=KB0010779&id=kb_article",
   "features": [
-    "public-ok",
+    "public",
     "access-anywhere",
     "access-mobile",
     "small-scale"
@@ -26,7 +26,7 @@
   "description": "Father Christmas. Santa Claus. Or, as I’ve always known him, Jeff.",
   "url": "https://princeton.service-now.com/snap?id=kb_article&sys_id=9dc11966dbcd5700b43dec51ca961956",
   "features": [
-    "public-ok",
+    "public",
     "access-anywhere",
     "access-mobile",
     "small-scale"
@@ -55,7 +55,7 @@
   "description": "I just have one question… do you know how to fly this thing?",
   "url": "https://dataspace.princeton.edu/jspui/about",
   "features": [
-    "public-ok",
+    "public",
     "sensitive",
     "access-anywhere",
     "access-mobile",
