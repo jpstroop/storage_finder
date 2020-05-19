@@ -13,7 +13,6 @@
 <script>
 import FeatureCategories from '@/components/FeatureCategories.vue'
 import OptionList from '@/components/OptionList.vue'
-import { store } from "./store.js";
 import categories from '@/../data/categories.json'
 import features from '@/../data/features.json'
 import options from '@/../data/options.json'
@@ -29,7 +28,6 @@ export default {
       categories: categories,
       features: features,
       options: options,
-      requiredFeaturesState: store.state
     }
   },
 

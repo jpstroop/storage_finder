@@ -11,7 +11,6 @@
 </template>
 
 <script>
-  import { store } from "../store.js";
 
   export default {
     name: 'feature-checkboxes',
@@ -19,11 +18,20 @@
       features: Array
     },
     methods: {
+      addFeature(id) {
+        this.$store.commit('addFeature', { featureId: id })
+      },
+      removeFeature(id) {
+        this.$store.commit('removeFeature', { featureId: id });
+      },
+      storeHasFeature(id) {
+        return this.$store.getters.requiredFeatures.includes(id);
+      },
       manageFeature(id) {
         // Just rely on button toggling to add and remove. The Array starts out
         // empty, so the first click will add, second will remove, etc...
-        store.hasFeature(id) ? store.removeFeature(id) : store.addFeature(id);
-        console.log(store.state.requiredFeatures)
+        this.storeHasFeature(id) ? this.removeFeature(id) : this.addFeature(id)
+        console.log(this.$store.state.requiredFeatures)
       }
     }
   }
