@@ -12,29 +12,29 @@
 
 <script>
 
-  export default {
-    name: 'feature-checkboxes',
-    props: {
-      features: Array
+export default {
+  name: 'feature-checkboxes',
+  props: {
+    features: Array
+  },
+  methods: {
+    addFeature(id) {
+      this.$store.commit('addFeature', { featureId: id })
     },
-    methods: {
-      addFeature(id) {
-        this.$store.commit('addFeature', { featureId: id })
-      },
-      removeFeature(id) {
-        this.$store.commit('removeFeature', { featureId: id });
-      },
-      storeHasFeature(id) {
-        return this.$store.getters.requiredFeatures.includes(id);
-      },
-      manageFeature(id) {
-        // Just rely on button toggling to add and remove. The Array starts out
-        // empty, so the first click will add, second will remove, etc...
-        this.storeHasFeature(id) ? this.removeFeature(id) : this.addFeature(id)
-        console.log(this.$store.state.requiredFeatures)
-      }
+    removeFeature(id) {
+      this.$store.commit('removeFeature', { featureId: id })
+    },
+    storeHasFeature(id) {
+      return this.$store.getters.requiredFeatures.includes(id)
+    },
+    manageFeature(id) {
+      // Just rely on button toggling to add and remove. The Array starts out
+      // empty, so the first click will add, second will remove, etc...
+      this.storeHasFeature(id) ? this.removeFeature(id) : this.addFeature(id)
+      // console.log(this.$store.state.requiredFeatures)
     }
   }
+}
 </script>
 
 <style scoped>

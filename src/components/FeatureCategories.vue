@@ -19,23 +19,23 @@
 </template>
 
 <script>
-  import FeatureCheckboxes from '@/components/FeatureCheckboxes.vue'
+import FeatureCheckboxes from '@/components/FeatureCheckboxes.vue'
 
-  export default {
-    name: 'feature-categories',
-    components: {
-      FeatureCheckboxes,
-    },
-    props: {
-      categories: Array,
-      features: Array
-    },
-    methods: {
-      filterFeaturesByCategory(catId) {
-        return this.features.filter(f => f.category === catId)
-      }
+export default {
+  name: 'feature-categories',
+  components: {
+    FeatureCheckboxes
+  },
+  props: {
+    categories: Array,
+    features: Array
+  },
+  methods: {
+    filterFeaturesByCategory(catId) {
+      return this.features.filter(f => f.category === catId)
     }
   }
+}
 </script>
 
 <style>

@@ -20,18 +20,18 @@ const store = new Vuex.Store({
   },
   mutations: {
     addFeature(state, payload) {
-      var id = payload.featureId;
-      state.requiredFeatures.push(id);
+      var id = payload.featureId
+      state.requiredFeatures.push(id)
     },
     removeFeature(state, payload) {
-      var id = payload.featureId;
-      state.requiredFeatures = state.requiredFeatures.filter(e => e !== id);
-    },
+      var id = payload.featureId
+      var index = state.requiredFeatures.indexOf(id)
+      state.requiredFeatures.splice(index, 1) // must happen in place!
+    }
   }
 })
 
-
 new Vue({
   store: store,
-  render: h => h(App),
+  render: h => h(App)
 }).$mount('#app')

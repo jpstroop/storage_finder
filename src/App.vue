@@ -27,9 +27,9 @@ export default {
     return {
       categories: categories,
       features: features,
-      options: options,
+      options: options
     }
-  },
+  }
 
 }
 </script>
