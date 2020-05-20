@@ -57,6 +57,7 @@ export default {
 #feature-categories {
   padding-right: 0;
   margin-right: 0;
+  padding-bottom: 1rem;
 }
 
 .list-group-item {
