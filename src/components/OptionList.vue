@@ -70,6 +70,7 @@ h2 {
   text-align: left;
   padding-left: 0;
   margin-left: 0;
+  margin-top: -1rem;
 }
 
 .option {
