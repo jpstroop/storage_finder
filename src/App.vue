@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h1>Storage Finder</h1>
-    <div class="small-container">
+    <div class="container-fluid">
       <div class="row">
         <feature-categories :categories="categories" :features="features" />
         <option-list :options="options" />

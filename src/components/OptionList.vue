@@ -1,5 +1,5 @@
 <template>
-  <ul id="option-list" class="col-sm-7">
+  <ul id="option-list" class="col-sm-8">
     <b-collapse v-for="option in options"
       tag="li" :visible="true"
       :key="option.id" :id="option.id"
@@ -75,11 +75,12 @@ h2 {
 .option {
   /* This plus option-wrapper below keeps jQuery animations smooth */
   padding: 0;
-  border-bottom: 1px solid rgba(0,0,0,.125);
 }
 
 .option-wrapper {
-  padding: 1rem .5rem;
+  padding: 1rem 0;
+  margin: 0 1rem;
+  border-bottom: 1px solid rgba(0,0,0,.125);
 }
 
 .option-features {
