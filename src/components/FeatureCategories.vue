@@ -62,6 +62,7 @@ export default {
 
 .list-group-item {
   text-align: left;
+  margin: 0 1rem;
 }
 
 .description {

@@ -43,4 +43,8 @@ export default {
   color: #2c3e50;
   margin-top: 10px;
 }
+
+.container-fluid {
+  max-width: 1400px;
+}
 </style>

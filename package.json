@@ -47,8 +47,16 @@
       "parser": "babel-eslint"
     },
     "rules": {
-      "no-unused-vars": ["error", { "args": "none" }],
-      "space-before-function-paren": ["error", "never"]
+      "no-unused-vars": [
+        "error",
+        {
+          "args": "none"
+        }
+      ],
+      "space-before-function-paren": [
+        "error",
+        "never"
+      ]
     }
   },
   "browserslist": [
