@@ -8,7 +8,7 @@ A rough, standalone port of the [Data Storage Finder](https://it.cornell.edu/dat
 
 ## Data and Descriptions
 
-The description of features are partly made up, and partly from [here](https://princeton.service-now.com/service?id=kb_article&sys_id=4bbafffcdba1d7c0146fd206ca961924), and partly nonsense. The questions in the initial commit were taken from the Cornell app. There's no IP/license statement listed on those
+The description of features are partly made up, and partly from [here](https://princeton.service-now.com/service?id=kb_article&sys_id=4bbafffcdba1d7c0146fd206ca961924), and partly nonsense. The questions in the initial commit were taken from the Cornell app. There's no IP/license statement listed on those, but all credit should go to the Cornell University Research Data Management Service Group
 
 ## Configuration
 
