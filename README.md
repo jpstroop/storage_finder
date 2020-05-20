@@ -20,13 +20,7 @@ Each _feature_ (the checkboxes and tags) is in exactly one _category_ (categorie
 
 ## Update the Demo
 
-```bash
-$ git checkout gh-pages # -b if necessary
-$ npm run build
-$ git add dist
-$ git commit -m "my message"
-$ git subtree push --prefix dist origin gh-pages
-```
+See [ghpages.sh](ghpages.sh).
 
 ## Developing / Building
 
