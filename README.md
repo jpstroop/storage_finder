@@ -4,6 +4,8 @@ A rough, standalone port of the [Data Storage Finder](https://it.cornell.edu/dat
 
 <sup>*</sup> Created by the Cornell University Research Data Management Service Group and Cornell Information Technologies Custom Development Group (2018). Finder Module. Drupal 8. https://github.com/CU-CommunityApps/CD-finder
 
+[Demo](https://jpstroop.github.io/storage_finder/)
+
 ## Data and Descriptions
 
 The description of features are partly made up, and partly from [here](https://princeton.service-now.com/service?id=kb_article&sys_id=4bbafffcdba1d7c0146fd206ca961924), and partly nonsense. The questions in the initial commit were taken from the Cornell app. There's no IP/license statement listed on those
@@ -13,6 +15,16 @@ The description of features are partly made up, and partly from [here](https://p
 See [`data/categories.json`](data/categories.json), [`data/features.json`](data/features.json), [`data/options.json`](data/options.json).
 
 Each _feature_ (the checkboxes and tags) is in exactly one _category_ (categories are the questions), and each _option_ (storage service) has many features. The `id` properties link everything, as though the JSON files were little relational tables. If you poke around for a few minutes you'll be able to figure it out.
+
+## Update the Demo
+
+```bash
+$ git checkout gh-pages # -b if necessary
+$ npm run build
+$ git add dist
+$ git commit -m "my message"
+$ git subtree push --prefix dist origin gh-pages
+```
 
 ## Developing / Building
 
