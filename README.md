@@ -16,7 +16,7 @@ See [`data/categories.json`](data/categories.json), [`data/features.json`](data/
 
 Each _feature_ (the checkboxes and tags) is in exactly one _category_ (categories are the questions), and each _option_ (storage service) has many features. The `id` properties link everything, as though the JSON files were little relational tables. If you poke around for a few minutes you'll be able to figure it out.
 
-![data relationships](rels.png)
+![data relationships](data/rels.png)
 
 ## Update the Demo
 
