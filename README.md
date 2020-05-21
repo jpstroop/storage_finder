@@ -1,6 +1,6 @@
 # Storage Finder
 
-A rough, standalone port of the [Data Storage Finder](https://it.cornell.edu/data-storage-finder)<sup>*</sup> to [Vue.js](https://vuejs.org/)
+A standalone rewrite of the [Cornell Data Storage Finder](https://it.cornell.edu/data-storage-finder)<sup>*</sup> to [Vue.js](https://vuejs.org/)
 
 <sup>*</sup> Created by the Cornell University Research Data Management Service Group and Cornell Information Technologies Custom Development Group (2018). Finder Module. Drupal 8. https://github.com/CU-CommunityApps/CD-finder
 
