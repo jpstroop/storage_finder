@@ -39,7 +39,6 @@ export default {
       return document.getElementById(option.id).style.display === 'none'
     },
     filterOptions() {
-      console.log(this.requiredFeatures)
       var toHide = this.options.filter(o => !this.optionHasAllFeatures(o))
       var toShow = this.options.filter(o => this.optionHasAllFeatures(o))
       for (var i = 0; i < this.options.length; i++) {

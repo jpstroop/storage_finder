@@ -25,9 +25,9 @@ export default {
   },
   data() {
     return {
-      categories: categories,
-      features: features,
-      options: options
+      categories,
+      features,
+      options
     }
   }
 

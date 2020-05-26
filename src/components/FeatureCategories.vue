@@ -1,6 +1,6 @@
 <template>
   <ul id="feature-categories" class="col-sm-4 list-group">
-    <li v-for="category in categories" :key="category.id" class="list-group-item">
+    <li v-for="category in categories" :key="category.id" class="list-group-item category">
       <p class="font-weight-bold description" :id="category.id+'Desc'">
         {{ category.description }}
         <b-icon-info-circle v-b-toggle="category.id+'Long'" class='info-icon when-closed' variant="primary"></b-icon-info-circle>

@@ -4,7 +4,7 @@
       <input class="form-check-input"
         type="checkbox"
         :id="feature.id + 'Check'"
-        v-on:change="manageFeature(feature.id)">
+        @click="manageFeature(feature.id)">
       <label class="form-check-label" :for="feature.id + 'Check'">{{ feature.description }}</label>
     </li>
   </ul>

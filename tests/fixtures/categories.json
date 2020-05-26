@@ -1,0 +1,25 @@
+[{
+  "id": "classification",
+  "description": "What is the classification of your data?",
+  "longDescription":"<p>I can save the world with a kettle and some string! Jamie, remind me to <a href=\"http://doctoripsum.com/\">give you a lesson</a> in tying knots, sometime.</p><p>There are fixed points throughout time where things must stay exactly the way they are. This is not one of them.</p>"
+}, {
+  "id": "backup",
+  "description": "Do you need backups, snapshots or replication of your data?",
+  "longDescription":"<p>Father Christmas. Santa Claus. Or, as I’ve always known him, Jeff. No idea. Just do what I do: hold tight and pretend it's a plan.</p>"
+}, {
+  "id": "scale",
+  "description": "How much data do you have and how fast will it grow?",
+  "longDescription":"<p>There's something else I've always wanted to say: Allons-y, Alonso! New-new-Doctor.</p>"
+}, {
+  "id": "performance",
+  "description": "Do you have special performance needs?",
+  "longDescription":"<p>You need to get yourself a better dictionary. When you do, look up 'genocide'. You'll find a little picture of me there, and the caption'll read 'Over my dead body'.</p><p>Harmless is just the word: that's why I like it!<p><ul><li>Doesn't kill</li><li>doesn't wound</li><li>doesn't maim</li></ul>"
+}, {
+  "id": "access",
+  "description": "How are you expecting to access the data?",
+  "longDescription":"<p> It's the city of New New York! Strictly speaking, it's the fifteenth New York since the original, so that makes it New-New-New-New-New-New-New-New-New-New-New-New-New-New-New New York.</p><ol><li>Aw, I wanted to be ginger! I've never been ginger!</li><li>Am I rude? Rude and not ginger.</li></ol><p>I'd call you a genius, except I'm in the room.</p>"
+}, {
+  "id": "sharing",
+  "description": "With whom do you need to share your data regularly?",
+  "longDescription":"<p>People assume that time is a strict progression of cause-and-effect... but actually, from a non-linear, non-subjective viewpoint, it's more like a big ball of wibbly-wobbly... timey-wimey... stuff.</p>"
+}]
