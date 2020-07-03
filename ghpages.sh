@@ -1,10 +1,13 @@
 #!/usr/bin/env bash
+APP_PATH="/storage_finder/" #retain "/" on either side
 BRANCH="gh-pages"
 REMOTE="origin"
 VUE_CONFIG_FILE="vue.config.js"
-VUE_CONFIG="module.exports = {
+
+start_branch=$(git rev-parse --abbrev-ref HEAD) # don't assume master
+vue_config="module.exports = {
   publicPath: process.env.NODE_ENV === 'production'
-    ? '/storage_finder/'
+    ? '$APP_PATH'
     : '/'
 }"
 
@@ -21,10 +24,10 @@ fi
 
 git push $REMOTE --delete $BRANCH
 git checkout -b $BRANCH
-echo -e "$VUE_CONFIG" > $VUE_CONFIG_FILE
+echo -e "$vue_config" > $VUE_CONFIG_FILE
 npm run build
 git add -f dist $VUE_CONFIG_FILE
 git commit -m "deploy latest to github pages"
 git subtree push --prefix dist $REMOTE $BRANCH
-git checkout master
+git checkout $start_branch
 git branch -D $BRANCH
