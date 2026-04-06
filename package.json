@@ -16,26 +16,26 @@
     "vuex": "^3.4.0"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.0.0",
     "@testing-library/jest-dom": "^5.9.0",
-    "@vue/cli-plugin-babel": "~4.3.0",
-    "@vue/cli-plugin-eslint": "^4.3.1",
-    "@vue/cli-plugin-unit-jest": "^4.4.4",
-    "@vue/cli-service": "~4.3.0",
-    "@vue/eslint-config-standard": "^5.1.2",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "^5.0.9",
+    "@vue/cli-plugin-unit-jest": "^5.0.9",
+    "@vue/cli-service": "~5.0.0",
+    "@vue/eslint-config-standard": "^6.0.0",
     "@vue/test-utils": "^1.0.3",
-    "babel-eslint": "^10.1.0",
+    "@vue/vue2-jest": "^27.0.0",
     "bootstrap": "^4.3.1",
-    "eslint": "^6.7.2",
-    "eslint-plugin-import": "^2.20.2",
+    "eslint": "^7.12.1",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "eslint-plugin-vue": "^6.2.2",
-    "jest-extended": "^0.11.5",
+    "eslint-plugin-vue": "^7.0.0",
+    "jest-extended": "^1.0.0",
     "popper.js": "^1.16.0",
     "portal-vue": "^2.1.6",
     "sass": "^1.19.0",
-    "sass-loader": "^8.0.0",
+    "sass-loader": "^12.0.0",
     "vue-cli-plugin-bootstrap-vue": "~0.6.0",
     "vue-template-compiler": "^2.6.11"
   },
@@ -55,7 +55,8 @@
       "@vue/standard"
     ],
     "parserOptions": {
-      "parser": "babel-eslint"
+      "parser": "@babel/eslint-parser",
+      "requireConfigFile": false
     },
     "rules": {
       "no-unused-vars": [
@@ -95,8 +96,9 @@
     "not dead"
   ],
   "jest": {
+    "testEnvironment": "jsdom",
     "setupFilesAfterEnv": [
-      "jest-extended",
+      "jest-extended/all",
       "@testing-library/jest-dom"
     ],
     "verbose": true,
