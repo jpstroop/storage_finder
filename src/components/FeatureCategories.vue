@@ -91,8 +91,5 @@ export default {
   display: none;
 }
 
-.list-group-item {
-  margin: auto 1rem;
-}
 
 </style>
